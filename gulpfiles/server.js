@@ -30,7 +30,9 @@ var gulp = require('gulp'),
  	// });
  	gulp.watch(['./server/server.js', './server/app/**/*.js','./server/jsons/**/*.json'],['server']);
 
- })
+ });
+
+ gulp.task('main-server',['inject','server']);
 
 // clean up if an error goes unhandled.
 process.on('exit', function() {
