@@ -37,8 +37,5 @@
   "scripts": {
     "start": "node server/server.js",
     "postinstall": "bower install && gulp build-server"
-  },
-  "engines": {
-    "node": "6.8.1"
   }
 }
