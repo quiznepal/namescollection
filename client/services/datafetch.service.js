@@ -8,7 +8,7 @@
 
 	function DatafetchService ($http) {
 		var service = this;
-		var url = "http://localhost:8083";
+		var url = "";
 		service.names = function () {
 			var response = $http({
 				method: 'GET',
