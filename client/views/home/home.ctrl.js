@@ -23,18 +23,35 @@ function HomeCtrl($scope,datafetchService) {
 
   var name = {};
 
-  $scope.data = [
+  /*$scope.data = [
   {en : 'yo', np : 'yooo'},
   {en : 'ao', np : 'mooo'},
   {en : 'zo', np : 'zooo'},
   {en : 'xo', np : 'xooo'}
-  ];
+  ];*/
+
+  var promise = datafetchService.names();
+  promise.then(function (response) {
+    console.log(response);
+    $scope.data = response.data;
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
 
 
   $scope.add = function () {
     name.en = $scope.nameInput.en;
     name.np = $scope.nameInput.np;
-    
+    var promise = datafetchService.postNames(name);
+    promise.then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
+    console.log(name);
   }
 
 }
