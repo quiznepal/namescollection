@@ -13,11 +13,28 @@ angular.module('names.quiznepal')
   	  }
   	}
   });
-
 }])
+
 .controller('HomeCtrl', HomeCtrl);
 HomeCtrl.$inject = ['$scope', 'datafetchService'];
 
 function HomeCtrl($scope,datafetchService) {
   console.log("reached here");
+
+  var name = {};
+
+  $scope.data = [
+  {en : 'yo', np : 'yooo'},
+  {en : 'ao', np : 'mooo'},
+  {en : 'zo', np : 'zooo'},
+  {en : 'xo', np : 'xooo'}
+  ];
+
+
+  $scope.add = function () {
+    name.en = $scope.nameInput.en;
+    name.np = $scope.nameInput.np;
+    
+  }
+
 }
