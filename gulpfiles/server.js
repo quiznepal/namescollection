@@ -32,7 +32,7 @@ var gulp = require('gulp'),
 
  });
 
- gulp.task('main-server',['inject','server']);
+ gulp.task('build-server',['inject']);
 
 // clean up if an error goes unhandled.
 process.on('exit', function() {
