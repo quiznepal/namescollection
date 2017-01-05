@@ -5,7 +5,7 @@
   "homepage": "quiznepal.com",
   "private": true,
   "dependencies": {
-    "angular": "~1.5.0",
+    "angular": "1.5.8",
     "angular-loader": "~1.5.0",
     "angular-mocks": "~1.5.0",
     "bootstrap": "^3.3.4",
