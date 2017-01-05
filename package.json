@@ -14,9 +14,8 @@
     "mongoskin": "^2.1.0",
     "morgan": "^1.7.0",
     "request": "^2.74.0",
-    "wagner-core": "^0.2.0"
-  },
-  "devDependencies": {
+    "wagner-core": "^0.2.0",
+  
     "bower": "^1.7.7",
     "gulp": "^3.9.1",
     "gulp-angular-filesort": "^1.1.1",
@@ -36,6 +35,6 @@
   },
   "scripts": {
     "start": "node server/server.js",
-    "postinstall": "npm install --dev && bower install && gulp build-server"
+    "postinstall": "bower install && gulp build-server"
   }
 }
