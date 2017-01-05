@@ -34,7 +34,7 @@
     "wrench": "^1.5.9"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "gulp main-server"
   },
   "engines": {
     "node": "6.8.1"

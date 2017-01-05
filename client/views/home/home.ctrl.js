@@ -23,6 +23,9 @@ function HomeCtrl($scope,datafetchService) {
 
   var name = {};
 
+  $scope.sortType = "en";
+  $scope.sortReverse = false;
+
   /*$scope.data = [
   {en : 'yo', np : 'yooo'},
   {en : 'ao', np : 'mooo'},
@@ -43,6 +46,7 @@ function HomeCtrl($scope,datafetchService) {
   $scope.add = function () {
     name.en = $scope.nameInput.en;
     name.np = $scope.nameInput.np;
+    name.sex = $scope.nameInput.sex;
     var promise = datafetchService.postNames(name);
     promise.then(function (response) {
       console.log(response);

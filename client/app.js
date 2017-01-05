@@ -22,14 +22,7 @@ var app = angular.module('names.quiznepal', [
         }
       }
     })
-    /*.state('app.home',{
-      url : '/',
-      views : {
-        'header@' : {
-          templateUrl : 'components/common/header/header.tpl.html'
-        }
-      }
-    })*/
+
     .state('app.404',{
       url : '/404',
       views : {
