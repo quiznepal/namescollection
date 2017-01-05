@@ -1,8 +1,8 @@
 {
-  "name": "nepseguide",
-  "description": "nepseguide",
+  "name": "quiznepal",
+  "description": "quiznepal",
   "version": "0.0.",
-  "homepage": "nepseguide.com",
+  "homepage": "quiznepal.com",
   "private": true,
   "dependencies": {
     "angular": "~1.5.0",

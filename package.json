@@ -35,7 +35,8 @@
     "wrench": "^1.5.9"
   },
   "scripts": {
-    "start": "gulp main-server"
+    "start": "node server/server.js",
+    "postinstall": "bower install && gulp build-server"
   },
   "engines": {
     "node": "6.8.1"
