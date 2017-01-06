@@ -38,6 +38,9 @@ Things to do to solve this error are
 ## TODO
 - Load new data after added
 
+## feature
+- convert english name to nepali
+
 ## License (GPL)
 
 This program is free software: you can redistribute it and/or modify
