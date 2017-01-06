@@ -23,6 +23,8 @@ function HomeCtrl($scope,datafetchService) {
 
   var name = {};
 
+  $scope.required = true;
+
   $scope.sortType = "en";
   $scope.sortReverse = false;
 
@@ -44,9 +46,13 @@ function HomeCtrl($scope,datafetchService) {
 
 
   $scope.add = function () {
-    name.en = $scope.nameInput.en;
-    name.np = $scope.nameInput.np;
-    name.sex = $scope.nameInput.sex;
+    name.en = ((typeof $scope.nameInput.en !== 'undefined' || $scope.nameInput.en == '')?$scope.nameInput.en : false);
+    name.np = ((typeof $scope.nameInput.np !== 'undefined' || $scope.nameInput.np == '')?$scope.nameInput.np : false);
+    name.sex = ((typeof $scope.nameInput.sex !== 'undefined' || $scope.nameInput.sex == '')?$scope.nameInput.sex : false);
+
+    if (!$scope.nameInput.en) { return}
+      
+    console.log("here it comes");
     var promise = datafetchService.postNames(name);
     promise.then(function (response) {
       console.log(response);

@@ -2,14 +2,14 @@
 <form class="form-inline pull-right">
   <div class="form-group">
     <label >Name (in english)</label>
-    <input type="text" class="form-control" id="" placeholder="Manish" ng-model="nameInput.en">
+    <input type="text" class="form-control" id="" placeholder="Manish" ng-model="nameInput.en" ng-required="required">
   </div>
   <div class="form-group">
     <label for="">नेपालीमा</label>
     <input type="text" class="form-control" id="" placeholder="मनिश" ng-model="nameInput.np">
   </div>
   <div class="form-group">
-   <select name="sex" id="" class="form-control" ng-model="nameInput.sex">
+   <select name="sex" id="" class="form-control" ng-model="nameInput.sex" ng-required="required">
    	<option value="male" selected>male</option>
    	<option value="female">female</option>
    </select>
