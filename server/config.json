@@ -1,5 +1,5 @@
 {
-    "connectionString": "mongodb://namecollector:quizzers@ds155418.mlab.com:55418/quiznepal",
+    "connectionString": "mongodb://<dbuser>:<dbpassword>@ds155418.mlab.com:55418/quiznepal",
     "apiUrl": "http://localhost:8083/api",
     "secret": "the secret, our secret"
 }
