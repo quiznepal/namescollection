@@ -49,7 +49,8 @@
 	<tr ng-repeat="name in data | orderBy:sortType:sortReverse  | filter:nameInput">
 	  	<td>{{$index+1}}</td>
 	  	<td>{{name.en | capitalize}}</td>
-	  	<td>{{name.np}}</td>
+	  	<td ng-if="name.np">{{name.np}}</td>
+      <td ng-if="!name.np">-</td>
 	  	<td>{{name.sex}}</td>
 	</tr>
   </tbody>
